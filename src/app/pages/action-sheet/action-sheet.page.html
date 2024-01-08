@@ -1,0 +1,19 @@
+<app-header [title]="'Action Sheet'" color="primary"></app-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Action Sheet Controller -->
+  <ion-button (click)="onClickASC()" expand="block" shape="round">Action Sheet Controller</ion-button>
+  
+  <!-- Action Sheet Inline -->
+  <ion-button id="open-activation-sheet" expand="block" shape="round">Action Sheet Inline</ion-button>
+  <ion-action-sheet
+    trigger="open-activation-sheet"
+    header="Eliminar registro"
+    subHeader="Esta accion no se puede deshacer"
+    backdropDismiss=true
+    [buttons]="buttons4ActionSheet"
+    (didDismiss)="onClickASI($event)">
+  </ion-action-sheet>
+
+</ion-content>

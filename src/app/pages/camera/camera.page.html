@@ -1,0 +1,17 @@
+<app-header
+  [title]="'Cámara'" 
+  [color]="'success'">
+</app-header>
+
+<ion-content>
+    <ion-button (click)="onClickCamera()" expand="block" shape="round">
+      Camara
+      <ion-icon slot="start" name="camera"></ion-icon>      
+    </ion-button>
+
+    <ion-button (click)="onClickGallery()" expand="block" shape="round">
+      Galería
+      <ion-icon slot="start" name="image"></ion-icon>      
+    </ion-button>
+    <ion-img src="https://i.pinimg.com/originals/40/c5/3f/40c53ff5a0da610aa4daff660c962961.png"></ion-img>
+  </ion-content>

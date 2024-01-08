@@ -1,0 +1,13 @@
+<app-header [title]="'Home'" color="dark"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list [lines]="'full'" [mode]="'ios'">
+    <ion-item
+                *ngFor="let c of components"
+                [routerLink]="c.path"
+                [color]="c.color">
+      <ion-icon slot="start" [name]="c.icon"></ion-icon>
+      {{c.name}}
+    </ion-item>
+  </ion-list>
+</ion-content>
